@@ -10,7 +10,10 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    CroFileModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
