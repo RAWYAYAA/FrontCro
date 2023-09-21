@@ -1,4 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import {Data} from "../../interface/data";
+import {ActivatedRoute} from "@angular/router";
+import {ListServiceService} from "../../service/list-service.service";
+import {HttpClient} from "@angular/common/http";
+import {saveAs} from "file-saver-es";
+
 
 @Component({
   selector: 'app-cro-list',
@@ -12,7 +18,7 @@ export class CroListComponent implements OnInit {
     currentPage = 1;
     pageSize = 10;
     totalPages = 0;
-    constructor(private route: ActivatedRoute,private listService: ListServiceService, private http:HttpClient) {}
+    constructor(private route: ActivatedRoute,private listService: CroFileServiceService, private http:HttpClient) {}
 
     ngOnInit() {
       this.list();

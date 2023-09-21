@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+
 
 const routes: Routes = [
  {
@@ -12,12 +13,12 @@ const routes: Routes = [
     },
       {
       path:'list',
-      //loadChildren: './src/app/module/cro-file/cro-list.module',
+      //loadChildren: './module/cro-file/cro-file.module#CroFileModule',
     },
       {
         path:'Download',
         component:FileDownloadComponent,
-       // loadChildren:'src/app/module/cro-file/cro-list.module',
+        //loadChildren:'./module/cro-file/cro-file.module#CroFileModule',
       }
     ]
   }

@@ -4,9 +4,12 @@ import { CroListComponent } from './cro-list/cro-list.component';
 import { FileDownloadComponent } from './file-download/file-download.component';
 
 @NgModule({
-  declarations: [CroListComponent, FileDownloadComponent],
+  declarations: [
+  CroListComponent,
+   FileDownloadComponent
+   ],
   imports: [
-    CommonModule
+    CommonModule,
   ]
 })
 export class CroFileModule { }
